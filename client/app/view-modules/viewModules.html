@@ -1,0 +1,44 @@
+<div ng-app="pokedex">
+
+
+    <!-- input field  -->
+  <div class="search" id="searchform">
+    <input class="inputField" type="text" id="searchPoke" placeholder="Search up a Pok&eacute;mon" size"103"/ ng-model="pokemon">
+    <button class="inputButton" type="button" ng-click="buttonClick(pokemon)" id="search">Find!</button>
+  </div>
+
+
+
+  <!-- Pokemon profile picture -->
+  <div class="profilePicture">
+    <img class="img" src="asset/pokeball.png" alt="Mountain View">
+  </div>
+
+
+  <!-- pokemon description -->
+  <div class="description">
+    <p>{{ description }}</p>
+  </div>
+
+  <!-- pokemon stats -->
+  <div class="stats">
+    <ul class="ulStats">
+      <li>Index: {{ ID }}</li>
+      <li>Height: {{ height }}</li>
+      <li>Weight: {{ weight }}</li>
+      <li>Base experience: {{ base_experience }}</li>
+      <li>Type: {{ types }}</li>
+      <li>HP: {{ hp }}</li>
+      <li>Attack: {{ attack }}</li>
+      <li>Defense: {{ defense }}</li>
+      <li>Speed: {{ speed }}</li>
+    </ul>
+  </div>
+
+  <!-- description -->
+  <div class="moves">
+    <p>Potential moves: {{ arrayOfMoves }} </p>
+  </div>
+
+  </div>
+</div>

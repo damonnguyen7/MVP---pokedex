@@ -1,0 +1,23 @@
+{
+  "name": "pokedex",
+  "description": "MVP project for MKS",
+  "main": "index.js",
+  "authors": [
+    "Damon Nguyen"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "jquery": "^3.0.0",
+    "query": "^0.0.2"
+  }
+}

@@ -1,0 +1,167 @@
+body {
+  padding-bottom: 50px;
+  background: url('../asset/professoroak.png');
+  background-repeat: no-repeat; 
+  background-position: right; 
+  background-size: 310px 600px;
+}
+
+.pokedex {
+  position: absolute;
+  position:absolute;
+  top: -9%;
+  left:50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);  
+}
+
+.container {
+  margin-bottom: 700px;
+}
+
+.profilePicture, .description, .stats, .moves, .list {
+  /*gradient*/
+  background: #f2f5f6; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
+
+  /*animation */
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+
+  /*box size*/
+  height: 300px;
+  width: 300px;
+  box-shadow: 5px 5px 2.5px #888888;
+}
+
+
+/*hover effect*/
+.profilePicture:hover, .description:hover, img:hover, .stats:hover, .moves:hover {
+   /*Reflection*/
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+ 
+   /*Glow*/
+  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+}
+
+/*picture div*/
+.profilePicture {
+  position: absolute;
+  position:absolute;
+  top: 11%;
+  left:36%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+/*img tag*/
+.img {
+  height: 300px;
+  width: 300px;
+}
+
+/*description */
+.description {
+  position: absolute;
+  overflow: scroll;
+  top: 11%;
+  left:62%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+/*paragraph*/
+p {
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.stats {
+  position: absolute;
+  top: 57%;
+  left:36%;
+  overflow: scroll;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.moves {
+  position: absolute;
+  top: 57%;
+  left:62%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); 
+  overflow: scroll;
+}
+
+* {
+    margin:0;
+    padding:0;
+    font:12pt Arial;
+}
+
+.search {
+  position:absolute;
+  left:50%;
+  bottom: 80%;
+  display:flex;
+  margin:5em auto;
+  width:40%;
+  flex-direction:row;
+  box-shadow:
+   1px 1px 0 rgb(108, 23, 23),
+   2px 2px 0 rgb(108, 23, 23),
+   3px 3px 0 rgb(108, 23, 23),
+   4px 4px 0 rgb(108, 23, 23),
+   5px 5px 0 rgb(108, 23, 23),
+   6px 6px 0 rgb(108, 23, 23),
+   7px 7px 0 rgb(108, 23, 23)
+  ;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.search>input[type=text],
+.search>button {
+  font:1.2em 'Montserrat Alternates';
+}
+
+.search>input[type=text] {
+  flex:1;
+  padding:0.6em;
+  border:0.2em solid rgb(200, 52, 52);
+}
+
+.search>button {
+  padding:0.6em 0.8em;
+  background-color:rgb(200, 52, 52);
+  color:white;
+  border:none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.ulStats {
+  list-style-type: none;
+}
+
+li {
+  font-size: 28px;
+}
+
+.list {
+  overflow: scroll;
+  width: 175px;
+}
+
